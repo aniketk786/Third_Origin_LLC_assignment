@@ -1,0 +1,11 @@
+{
+  "required_fields": ["metric_name", "datapoint", "type_"],
+  "one_of_fields": ["tags", "interval"],
+  "either_or_fields": ["tags", "interval"],
+  "mutually_exclusive": {
+    "tags": "interval"
+  },
+  "value_set": {
+    "type_": ["gauge", "rate", "count"]
+  }
+}
